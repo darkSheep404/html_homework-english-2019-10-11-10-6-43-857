@@ -1,10 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>HTML</title>
-</head>
-<body>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unified Modeling Language Theory Test</title>
+    <style>
+        .examinfo {
+            display: inline-block;
+            width: 400px;
+        }
 
+        .examinfo>label {
+            display: inline-block;
+            width: 120px;
+        }
+
+        input {
+            border: 1px solid #ab9797;
+        }
+
+        textarea {
+            width: 600px;
+            height: 100px;
+        }
+
+        .content {
+            margin-left: 20px;
+        }
+
+        .content>input,
+        textarea {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <h2>Unified Modeling Language Theory Test</h2>
+        <div class="examinfo"><label>Test Subject:</label>Unified Modeling Language</div>
+        <div class="examinfo"><label>Time:</label>100 minute</div>
+        <div class="examinfo"><label>Score:</label>100</div>
+        <br>
+        <div class="examinfo">
+            <label>Class:</label>
+            <select name="class">
+                <option value="Class 1">Class 1</option>
+                <option value="Class 2">Class 2 </option>
+            </select>
+        </div>
+        <div class="examinfo"><label>Student ID:</label><input type="text" value="001" name="stuId"></div>
+        <div class="examinfo"><label>Name:</label><input type="text" value="Darcy" name="stuName"></div>
+        <!-- 第一章题目 -->
+        <h2>
+            1、Fill in the blanks(5 points per space, 20 points total)
+        </h2>
+        <div class="content">
+            <label>1.The full name of UML in Chinese is:</label><input type="text" name="1.1"
+                value="Unified Modeling Language"><br>
+            <label>2.The most prominent feature of the object is:</label><input type="text" name="1.2"
+                value="Encapsulation Inheritance Polymorphism"><br>
+        </div>
+        <!--第二章  -->
+        <h2>2、Multiple choice question(10 points per space 20 points total)</h2>
+        <div class="content">
+            <span>1.The relationship between UML and software engineering is.</span><br>
+            <input type="radio" name="2.1" value="A"><label>(A) UML is software engineering</label><br>
+            <input type="radio" name="2.1" value="B" checked><label>(B)UMLparticipates in several stages of the software
+                development process in software
+                engineering</label><br>
+            <input type="radio" name="2.1" value="C"><label>(C) UML has bothing to do with software
+                engineering</label><br>
+            <input type="radio" name="2.1" value="D"><label>(D)UML is part of software engineering</label><br>
+            <label>2. Java language support:</label><br>
+            <input type="radio" name="2.2" value="A" checked><label>(A) Single inheritance</label><br>
+            <input type="radio" name="2.2" value="B"><label>(B) Multiple inheritance</label><br>
+            <input type="radio" name="2.2" value="C"><label>(C)Single inheritance and multiple inheritance
+                support</label><br>
+            <input type="radio" name="2.2" value="D"><label>(D) Single inheritance and multiple inheritance are not
+                supported</label><br>
+        </div>
+        <h2>3、Multiple choice(10 points per space,20 points total)</h2>
+        <div class="content">
+            <label>1.The granularity of the use case is divided into the following three: </label><br>
+            <input type="checkbox" name="3.1" value="A" checked><label>(A)Overview level</label><br>
+            <input type="checkbox" name="3.1" value="B"><label>(B) Demand level</label><br>
+            <input type="checkbox" name="3.1" value="C" checked><label>(C) User target level</label><br>
+            <input type="checkbox" name="3.1" value="D" checked><label>(D) Sub-function level</label><br>
+            <span>2.The class diagram consists of which of the following three parts: </span><br>
+            <input type="checkbox" name="3.2" value="A" checked><label>(A) Name</label><br>
+            <input type="checkbox" name="3.2" value="B" checked><label>(B) Attribute</label><br>
+            <input type="checkbox" name="3.2" value="C" checked><label>(C) Operation</label><br>
+            <input type="checkbox" name="3.2" value="D" checked><label>(D) Function</label><br>
+            <h2>4、True or False(10 points per space, 20 points total)</h2>
+            <span>1.Use case diagrams are only used to communicate and communicate with customers to determine demand>
+            </span><label>√</label> <input type="radio" style="margin-left:0px" name="4.1" value="true" checked>
+            <label>×</label> <input type="radio" name="4.1" style="margin-left:0px" value="false" checked><br>
+            <span>2.In the state diagram.the termination state allows any number of multiples in a state diagram
+            </span><label>√</label><input type="radio" style="margin-left:0px" name="4.2" value="true" checked>
+            <label>×</label> <input type="radio" name="4.2" style="margin-left:0px" value="false" checked>
+            <h2>5、Short answer question(20 points per space, 20 points total)</h2>
+            <label>1, Briefly describe what the model is and how it behaves?</label><br>
+            <textarea name="5.1">
+        A model is a simplification and abstraction of the real world,A mode is an expression of the system.process,thing or concept of research.Can be a physical entity;can bea certain graphic; or a mathematical expression
+        </textarea><br>
+            <input type="submit" value="Calculating score">
+        </div>
+    </form>
 </body>
+
 </html>
